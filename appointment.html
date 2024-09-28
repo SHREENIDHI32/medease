@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - MedEase</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+    <header>
+        <!-- Optional Header Content -->
+    </header>
+
+    <main>
+        <div class="appointment-container">
+            <!-- Left Section for Booking Form -->
+            <div class="appointment-form">
+                <h2>Choose Date</h2>
+                <input type="date" class="input-field" id="appointment-date">
+
+                <h3>Select Patient</h3>
+                <input type="text" class="input-field" placeholder="Search Patient">
+
+                <h3>Current Illness</h3>
+                <input type="text" class="input-field" placeholder="Enter Illness">
+
+                <h3>Send a Message</h3>
+                <textarea class="input-field" placeholder="For further details about your illness"></textarea>
+
+                <button class="select-time-btn">Select Time</button>
+            </div>
+
+            <!-- Right Section for Time Slots -->
+            <div class="time-slot-section">
+                <h2>Time Slots</h2>
+                <div class="slots-grid">
+                    <button class="slot available">8:00</button>
+                    <button class="slot unavailable">8:15</button>
+                    <button class="slot available">8:30</button>
+                    <button class="slot unavailable">8:45</button>
+                    <button class="slot available">9:00</button>
+                    <button class="slot available">9:15</button>
+                    <button class="slot unavailable">9:30</button>
+                    <button class="slot available">9:45</button>
+                    <button class="slot unavailable">10:00</button>
+                    <button class="slot available">10:15</button>
+                    <button class="slot unavailable">10:30</button>
+                    <button class="slot available">10:45</button>
+                    <button class="slot available">11:00</button>
+                    <button class="slot unavailable">11:15</button>
+                    <button class="slot available">11:30</button>
+                    <button class="slot available">11:45</button>
+                    <button class="slot unavailable">12:00</button>
+                    <button class="slot available">12:15</button>
+                    <button class="slot available">12:30</button>
+                    <button class="slot unavailable">12:45</button>
+                    <button class="slot available">1:00</button>
+                    <button class="slot available">1:15</button>
+                    <button class="slot unavailable">1:30</button>
+                    <button class="slot available">1:45</button>
+                    <!-- Add more slots as needed -->
+                </div>
+            
+                <button class="confirm-slot-btn">Confirm Slot</button>
+            </div>
+        </div>
+        
+        <div class="tick-mark">
+            <center><img src="tickmark.png" alt="Tick Mark"></center>
+        </div>
+
+        <!-- Booking confirmation -->
+        <div class="booking-confirmation">
+            <p>Your Slot is Booked!</p>
+            <p>Congratulations, your slot has been successfully booked.</p>
+        </div>
+
+        <!-- Next Button -->
+        <div class="next-button-container">
+            <a href="doctorpanel.html">
+                <button class="next-btn">Next</button>
+            </a>
+        </div>
+
+    </main>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!-- Confirmation Pop-up -->
+    <div id="confirmationPopup" class="popup-modal">
+        <div class="popup-content">
+            <div class="tick-mark">
+                <img src="tickmark.png" alt="Tick Mark">
+            </div>
+            <h1>Your Slot is Booked!</h1>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

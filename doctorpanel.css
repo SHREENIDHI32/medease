@@ -1,0 +1,200 @@
+/* Overall body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #91c6ff;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #91c6ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-grow: 0.5;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:   #edf0f4;
+    ;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 10px;  /* Reduced height for smaller square */
+}
+
+.card-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    text-align: center;
+}
+
+.upcoming-patients {
+    width: 300px; /* Fixed width for patient list on the right */
+    flex-shrink: 0;
+    background-color:      #edf0f4;
+    ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming-patients h2 {
+    margin-bottom: 10px;
+}
+
+.upcoming-patients ul {
+    list-style: none;
+    padding: 0;
+}
+
+.upcoming-patients ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .upcoming-patients {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+.sidebar {
+    width: 250px;
+    background-color: #91c6ff;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;  /* Makes the entire list item area clickable */
+    padding: 10px 15px;  /* Adds padding to the link for better clickability */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.sidebar ul li a:hover, .sidebar ul li a:focus {
+    background-color: #c3ddf5;  /* Lighter shade of the sidebar color for hover */
+    color: #ffffff;  /* Keeps text color white for better readability */
+    text-decoration: none;  /* Avoids underlining the text */
+}
+.next-button-container {
+    display: flex;               /* Use flexbox for centering */
+    justify-content: center;     /* Center the content horizontally */
+    margin-top: 20px;           /* Add some top margin */
+}
+
+.next-btn {
+    background-color: #91c6ff;  /* Green background */
+    color: white;                /* White text */
+    padding: 10px 20px;         /* Some padding */
+    border: none;                /* No borders */
+    border-radius: 5px;         /* Rounded corners */
+    cursor: pointer;             /* Pointer cursor on hover */
+    font-size: 16px;             /* Increase font size */
+}
+
+.next-btn:hover {
+    background-color: #4f7eaf;   /* Darker green on hover */
+}
+

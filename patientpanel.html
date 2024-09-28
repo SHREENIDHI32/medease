@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Panel</title>
+    <link rel="stylesheet" href="patientpanel.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>MedEase</h2>
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Medical History</a></li>
+                <li><a href="#">Notification</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <header>
+                <h1>Welcome Back, Patient_Name</h1>
+                <button class="logout-btn">Logout</button>
+            </header>
+            <div class="dashboard">
+                <div class="cards">
+                    <div class="card">
+                        <i class="fas fa-history card-icon">🔑</i>
+                        <div class="card-text">Medical History</div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-bell card-icon">✉️</i>
+                        <div class="card-text">Open Message</div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-cog card-icon">📝</i>
+                        <div class="card-text">Manage Details</div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-user card-icon">👥</i>
+                        <div class="card-text">Edit Login Info</div>
+                    </div>
+                    <div class="next-button-container"></div>
+                <a href="adminpanel.html">
+                    <button class="next-btn">Next</button>
+                </a>
+                </div>
+                
+                
+                <div class="recent-medicines">
+                    <h2>Medicines used recently</h2>
+                    <ul>
+                        <li>Paracetamol</li>
+                        <li>Ibuprofen</li>
+                        <li>Amoxicillin</li>
+                        <li>Aspirin</li>
+                        <li>Ciprofloxacin</li>
+                        <li>Omeprazole</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Confirmation Page Styling */
+.confirmation-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f7fb;
+}
+
+.confirmation-box {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.tick-mark {
+    font-size: 80px;
+    color: #2ECC71; /* Green color for tick mark */
+    margin-bottom: 20px;
+}
+
+.confirmation-box h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.confirmation-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #A1C5D6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
